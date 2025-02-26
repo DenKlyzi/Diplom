@@ -1,0 +1,215 @@
+@extends('layouts.mainSite')
+
+@section('content')
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>@yield('title', 'Vortex - Интернет магазин')</title>
+        @stack('styles')
+    </head>
+    <div>
+        <main class="overflow-hidden">
+            <section class="breadcrumb-area" style="background-image: url({{asset('dist/img/imagesSite/inner-pages/breadcum-bg.png')}});">
+            </section>
+            <hr class="dividing-hr">
+            <section class="about">
+                <div class="container">
+                    <div>
+                        <div class="about__content text-center pb-3 pt-3">
+                            <div class="title wow fadeInUp animated">
+                                <h2>Только оригинальная продукция</h2>
+                            </div>
+                            <div class="text wow fadeInUp animated">
+                                <p>У нас вы найдете только оригинальную продукцию высочайшего качества. Мы гордимся тем, что
+                                    предлагаем только оригинальные товары от известных брендов, чтобы обеспечить нашим
+                                    клиентам надежность и удовлетворение от покупки. Приобретая у нас продукцию, вы можете
+                                    быть уверены в её подлинности и безопасности. Покупайте у нас, выбирая только
+                                    оригинальные товары!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="mission">
+                <div class="shape1"><img src="{{asset('dist/img/imagesSite/shape/mission-v1-shape1.png')}}" alt="" /></div>
+                <div class="shape2"><img src="{{asset('dist/img/imagesSite/shape/mission-v1-shape2.png')}}" alt="" /></div>
+                <hr class="dividing-hr">
+                <div class="auto-container container mission__background pb-5 pt-5">
+                    <div class="container">
+                        <div class="row mt--30 align-items-center justify-content-center">
+                            <div class="col-lg-6 col-md-10 mt-30">
+                                <div class="mission__content text-lg-start text-center">
+                                    <h2 class=" wow fadeInUp animated">Наша задача</h2>
+                                    <p class=" wow fadeInUp animated">Мы желаем предоставить клиентам широкий выбор
+                                        качественных компьютерных комплектующих по доступным ценам. Мы стремимся помочь
+                                        нашим клиентам создать мощные и надежные компьютеры для любых целей - будь то игры,
+                                        работа, учеба или творчество. Наша команда профессионалов всегда готова помочь с
+                                        выбором товара, дать консультацию и поддержку на всех этапах покупки. Мы ценим
+                                        доверие клиентов и гарантируем качество наших услуг.</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 mt-30">
+                                <div class="mission__thumb wow fadeInRight animated pb-0"> <img
+                                        src="{{asset('dist/img/imagesSite/inner-pages/mission-v1-img1.jpg')}}" alt="" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <hr class="dividing-hr">
+            <section class="team pt-5 pb-5">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-xl-6 col-lg-9">
+                            <div class="section-head text-center wow fadeInUp animated">
+                                <h2 class="title">Наша команда</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-10 wow fadeInUp animated">
+                            <div class="team__single mt-30 ">
+                                <div class="team__single-img"> <img src="{{asset('dist/img/imagesSite/inner-pages/team-v1-1.jpg')}}" alt="" />
+                                    <div class="overlay-text">
+                                        <ul>
+                                            <li>
+                                                <h6><a href="#" target="_blank">Телеграм</a> </h6>
+                                            </li>
+                                            <li>
+                                                <h6><a href="#" target="_blank">ВКонтакте</a> </h6>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="team-content text-center">
+                                    <h2><a href="#0">Кирилл Дорогов</a> <span>CEO</span> </h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-10 wow fadeInUp animated">
+                            <div class="team__single mt-30 ">
+                                <div class="team__single-img"> <img src="{{asset('dist/img/imagesSite/inner-pages/team-v1-2.jpg')}}" alt="" />
+                                    <div class="overlay-text">
+                                        <ul>
+                                            <li>
+                                                <h6><a href="#" target="_blank">Телеграм</a> </h6>
+                                            </li>
+                                            <li>
+                                                <h6><a href="#" target="_blank">ВКонтакте</a> </h6>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="team-content text-center">
+                                    <h2><a href="#0">Денис Зиновкин</a> <span>Основатель</span> </h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-10 wow fadeInUp animated">
+                            <div class="team__single mt-30 ">
+                                <div class="team__single-img"> <img src="{{asset('dist/img/imagesSite/inner-pages/team-v1-3.jpg')}}" alt="" />
+                                    <div class="overlay-text">
+                                        <ul>
+                                            <li>
+                                                <h6><a href="#" target="_blank">Телеграм</a> </h6>
+                                            </li>
+                                            <li>
+                                                <h6><a href="#" target="_blank">ВКонтакте</a> </h6>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="team-content text-center">
+                                    <h2><a href="#0">Илья Мешканцов</a> <span>Топ-менеджер</span></h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <hr class="dividing-hr">
+            <section class="testimonial-two pt-5 pb-5">
+                <div class="container">
+                    <div class="section-header text-center wow fadeInUp animated">
+                        <h2>Счастливые клиенты</h2>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-10 wow fadeInUp animated">
+                            <div class="testimonial-two__single mt-30" style="background-image: url({{asset('dist/img/imagesSite/testimonial/testimonial-v1-1.png')}});">
+                                <div class="testimonial-two__single-inner">
+                                    <div class="testimonial-two__single-content text-center">
+                                        <div class="client-info">
+                                            <h6>Илья Яцкевич</h6>
+                                        </div>
+                                        <div class="text">
+                                            <p>- Когда меня спросили, какая лучшая компания по комплектующим, я без раздумий ответил “Vortex”. Я лично покупал у них свой компьютер.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-10 wow fadeInUp animated">
+                            <div class="testimonial-two__single mt-30" style="background-image: url({{asset('dist/img/imagesSite/testimonial/testimonial-v1-2.png')}});">
+                                <div class="testimonial-two__single-inner">
+                                    <div class="testimonial-two__single-content text-center">
+                                        <div class="client-info">
+                                            <h6>Александр Парадеев</h6>
+                                        </div>
+                                        <div class="text">
+                                            <p>- Увидев компанию “Vortex”, я был потрясен, настолько отзывчивых сотрудников я еще не встречал. Я доволен покупкой и обязательно вернусь еще.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-10 wow fadeInUp animated">
+                            <div class="testimonial-two__single mt-30" style="background-image: url({{asset('dist/img/imagesSite/testimonial/testimonial-v1-3.png')}});">
+                                <div class="testimonial-two__single-inner">
+                                    <div class="testimonial-two__single-content text-center">
+                                        <div class="client-info">
+                                            <h6>Александр Ермолаев</h6>
+                                        </div>
+                                        <div class="text">
+                                            <p>- Увидев, как моргенштерн покупает компьютер, я решил поинтересоваться, где же он его взял? Он посоветовал компанию “Vortex”. Я понял, что буду покупать именно у них.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <hr class="dividing-hr">
+            <div class="row justify-content-center mb-4">
+                <div class="col-12 wow fadeInUp animated">
+                    <h3 class="text-center">Наши партнёры</h3>
+                    <div class="partnerslider d-flex justify-content-center mt-3">
+                        <div class="partner-one__brand">
+                            <a href="#0" class="d-flex justify-content-center align-items-center">
+                                <img src="{{asset('dist/img/imagesSite/brand/brand-logo-1.png')}}" alt="Partner 1">
+                            </a>
+                        </div>
+                        <div class="partner-one__brand">
+                            <a href="#0" class="d-flex justify-content-center align-items-center">
+                                <img src="{{asset('dist/img/imagesSite/brand/brand-logo-3.png')}}" alt="Partner 2">
+                            </a>
+                        </div>
+                        <div class="partner-one__brand">
+                            <a href="#0" class="d-flex justify-content-center align-items-center">
+                                <img src="{{asset('dist/img/imagesSite/brand/brand-logo-4.png')}}" alt="Partner 3">
+                            </a>
+                        </div>
+                        <div class="partner-one__brand">
+                            <a href="#0" class="d-flex justify-content-center align-items-center">
+                                <img src="{{asset('dist/img/imagesSite/brand/brand-logo-2.png')}}" alt="Partner 4">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+@endsection
