@@ -68,6 +68,7 @@
                                 <li class="dropdown-list"><a href="{{ route('site.boxcat') }}"><span>КОРПУСА</span></a></li>
                                 <li class="dropdown-list"><a href="{{ route('site.pccat') }}">ГОТОВЫЕ СБОРКИ</a></li>
                                 <li class="dropdown-list"><a href="{{ route('site.othercat') }}"><span>ДРУГОЕ</span></a></li>
+                                <li class="dropdown-list"><a href="{{ route('site.newscat') }}"><span>НОВОСТИ</span></a></li>
                                 <li class="dropdown-list"><a href="{{ route('site.cart') }}" class="number cart-icon"><img src="{{asset('dist/img/imagesSite/shop/cart.png')}}"><span class="total"></span> </a></li>
                             </ul>
                         </nav>

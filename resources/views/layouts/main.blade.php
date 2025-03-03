@@ -125,6 +125,13 @@
                 <p>Пользователи</p>
               </a>
             </li>
+
+            <li class="nav-item">
+                <a href="{{ route('news.index') }}" class="nav-link">
+                    <i class="nav-icon fas fa-newspaper"></i>
+                    <p>Новости</p>
+                </a>
+            </li>
         </ul>
           <div class="d-flex flex-column align-items-center">
               <button class="btn btn-danger btn-sm w-50 mt-3"><a href="{{route('site.logout')}}" style="color: white;">Выйти</a></button>

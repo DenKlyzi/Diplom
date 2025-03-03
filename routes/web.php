@@ -212,6 +212,20 @@ Route::group(['prefix' => 'likes'], function () {
     Route::delete('/add-to-cart-from-like/{id}', [\App\Http\Controllers\Site\Likes\IndexController::class, 'addToCartFromLike'])->name('likes.add_to_cart');
 });
 
+Route::group(['prefix'=> 'news'], function ()
+{
+    Route::get('/', \App\Http\Controllers\News\IndexController::class)->name('news.index');
+    Route::get('/create', \App\Http\Controllers\News\CreateController::class)->name('news.create');
+    Route::delete('/{news}', \App\Http\Controllers\News\DeleteController::class)->name('news.delete');
+    Route::get('/{news}/edit', \App\Http\Controllers\News\EditController::class)->name('news.edit');
+    Route::get('/{news}', \App\Http\Controllers\News\ShowController::class)->name('news.show');
+    Route::post('/', \App\Http\Controllers\News\StoreController::class)->name('news.store');
+    Route::patch('/{news}', \App\Http\Controllers\News\UpdateController::class)->name('news.update');
+});
+
+Route::group(['prefix' => 'newscat'], function () {
+    Route::get('/', [\App\Http\Controllers\Site\NewsCat\IndexController::class, 'ShowCards'])->name('site.newscat');
+});
 
 
 
